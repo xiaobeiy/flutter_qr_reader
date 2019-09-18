@@ -198,51 +198,51 @@ class QrcodeReaderViewState extends State<QrcodeReaderView>
                 ),
               ),
             ),
-            Positioned(
-              width: constraints.maxWidth,
-              bottom: constraints.maxHeight == mediaQuery.size.height
-                      ? 12 + mediaQuery.padding.top
-                      : 12,
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  GestureDetector(
-                    behavior: HitTestBehavior.translucent,
-                    onTap: _scanImage,
-                    child: Container(
-                      width: 45,
-                      height: 45,
-                      alignment: Alignment.center,
-                      child: Image.asset(
-                        "assets/tool_img.png",
-                        package: "flutter_qr_reader",
-                        width: 25,
-                        height: 25,
-                        color: Colors.white54,
-                      ),
-                    ),
-                  ),
-                  Container(
-                    width: 80,
-                    height: 80,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(40)),
-                      border: Border.all(color: Colors.white30, width: 12),
-                    ),
-                    alignment: Alignment.center,
-                    child: Image.asset(
-                      "assets/tool_qrcode.png",
-                      package: "flutter_qr_reader",
-                      width: 35,
-                      height: 35,
-                      color: Colors.white54,
-                    ),
-                  ),
-                  SizedBox(width: 45, height: 45),
-                ],
-              ),
-            )
+//             Positioned(
+//               width: constraints.maxWidth,
+//               bottom: constraints.maxHeight == mediaQuery.size.height
+//                       ? 12 + mediaQuery.padding.top
+//                       : 12,
+//               child: Row(
+//                 crossAxisAlignment: CrossAxisAlignment.center,
+//                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//                 children: <Widget>[
+//                   GestureDetector(
+//                     behavior: HitTestBehavior.translucent,
+//                     onTap: _scanImage,
+//                     child: Container(
+//                       width: 45,
+//                       height: 45,
+//                       alignment: Alignment.center,
+//                       child: Image.asset(
+//                         "assets/tool_img.png",
+//                         package: "flutter_qr_reader",
+//                         width: 25,
+//                         height: 25,
+//                         color: Colors.white54,
+//                       ),
+//                     ),
+//                   ),
+//                   Container(
+//                     width: 80,
+//                     height: 80,
+//                     decoration: BoxDecoration(
+//                       borderRadius: BorderRadius.all(Radius.circular(40)),
+//                       border: Border.all(color: Colors.white30, width: 12),
+//                     ),
+//                     alignment: Alignment.center,
+//                     child: Image.asset(
+//                       "assets/tool_qrcode.png",
+//                       package: "flutter_qr_reader",
+//                       width: 35,
+//                       height: 35,
+//                       color: Colors.white54,
+//                     ),
+//                   ),
+//                   SizedBox(width: 45, height: 45),
+//                 ],
+//               ),
+//             )
           ],
         );
       }),
